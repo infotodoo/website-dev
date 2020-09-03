@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_field_service_form_inherit" model="ir.ui.view">
+        <field name="name">field.service.form.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="industry_fsm.project_task_view_form"/>
+        <field name="arch" type="xml">
+
+            <field name="name" position="attributes" >
+                <attribute name="required">0</attribute>
+            </field> 
+            
+            <xpath expr="//field[(@name='partner_id')]" position="after">               
+                <field name="phone" required="True"/>
+                <field name="customer_email" required="True"/>
+                <field name="spare_parts" required="True"/>
+                <field name="team_to_check" required="True"/>
+                <field name="serial" required="True"/>
+                <field name="brand" required="True"/>
+                <field name="model" required="True"/>
+                <field name="machine_location" required="True"/>
+                <field name="type_request" required="True"/>
+                <field name="type_service" required="True" widget="radio"/>                
+            </xpath>
+        </field>
+    </record>
+</odoo>         
