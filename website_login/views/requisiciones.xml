@@ -3,6 +3,10 @@
     <template id="website_requisicions">
         <t t-call="website.layout">
             <t t-set="additional_title">Añadir Requisicion</t>
+
+            <div class="container">
+                <h1>Añadir Requisicion</h1>
+            </div>
         </t>
     </template>
 </odoo>
