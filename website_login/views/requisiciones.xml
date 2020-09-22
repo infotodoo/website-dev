@@ -59,46 +59,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="dropdown-divider"></div>
-                                <!-- <div class="text-right o_website_form_required_custom">
-                                    <label class="col-form-label" for="solicitante">Nombre del Solicitante
-                                    </label>
-                                </div>     -->
-                                    <!-- <select class="form-control" name="solicitante" id="solicitante"
-                                                    required="">
-                                        <option></option>
-                                        <option t-foreach="employees" t-as="employee" t-att-value="employee.id">
-                                            <t t-esc="employee.name"/>
-                                        </option>
-                                    </select> -->
-                                        
-                                    <!-- <div class="text-right">
-                                        <label class="col-form-label" for="cargo_soli">Cargo del Solicitante
-                                        </label>
-                                    </div>
-                                    <input type="text" id="cargo_soli" class="form-control o_website_form_input"
-                                                   name="cargo_soli" readonly="true"/> -->
-                                        
-                                    <!-- <div class="text-right o_website_form_required_custom">
-                                        <label class="col-form-label" for="emp">Empresa Cliente
-                                        </label>
-                                    </div>
-                                    <select class="form-control" name="emp" id="emp"
-                                                    required="">
-                                        <option></option>
-                                        <option t-foreach="companies" t-as="company" t-att-value="company.id"
-                                                        t-att-selected="company.id == company_current.id">
-                                            <t t-esc="company.name"/>
-                                        </option>
-                                    </select> -->
                                 <!-- fin Informacion solicitante -->
+                                <div class="dropdown-divider"></div>
                                 <!-- Aprobaciones -->
-
-                                <!-- <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Aprobaciones</u>
-                                    </label>
-                                </div> -->
                                 <h5 class="text-left"><u>Aprobaciones</u></h5>
                                 <div class="row">
                                     <div class="col-md-4">
@@ -142,59 +105,15 @@
                                         </div>
                                     </div>
                                 </div>                         
-                                    
-                                            <!-- <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel1">Aprobador Nivel 1
-                                                </label>
-                                            </div> -->
-                                            <!-- <select class="form-control" name="aprobador_nivel1" id="aprobador_nivel1"
-                                                    required="">
-                                                <option></option>
-                                                <option t-foreach="nivel1_rec" t-as="nivel1" t-att-value="nivel1.id">
-                                                    <t t-esc="nivel1.name"/>
-                                                </option>
-                                            </select> -->
-
-                                            <!-- <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel2">Aprobador Nivel 2
-                                                </label>
-                                            </div> -->
-
-                                            <!-- <select class="form-control" name="aprobador_nivel2" id="aprobador_nivel2"
-                                                    required="">
-                                                <option></option>
-                                                <option t-foreach="nivel2_rec" t-as="nivel2" t-att-value="nivel2.id">
-                                                    <t t-esc="nivel2.name"/>
-                                                </option>
-                                            </select> -->
-                                            <!-- <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel3">Aprobador Nivel 3
-                                                </label>
-                                            </div> -->
-                                            <!-- <select class="form-control" name="aprobador_nivel3" id="aprobador_nivel3"
-                                                    required="">
-                                                <option></option>
-                                                <option t-foreach="nivel3_rec" t-as="nivel3" t-att-value="nivel3.id">
-                                                    <t t-esc="nivel3.name"/>
-                                                </option>
-                                            </select> -->
                                 <!-- fin Aprobaciones -->
                                 <div class="dropdown-divider"></div>
-
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Información Vacante</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="cargo_solicitado">Cargo Solicitado
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                <!-- Informacion Vacante -->
+                                <h5 class="text-left"><u>Información Vacante</u></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label o_website_form_required_custom" for="cargo_solicitado">Cargo Solicitado
+                                            </label>
                                             <select class="form-control" name="cargo_solicitado" id="cargo_solicitado"
                                                     required="">
                                                 <option></option>
@@ -202,14 +121,12 @@
                                                     <t t-esc="job.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="jefe_inmediato">Jefe Inmediato
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="jefe_inmediato">Jefe Inmediato
+                                            </label>
                                             <select class="form-control" name="jefe_inmediato" id="jefe_inmediato"
                                                     required="">
                                                 <option></option>
@@ -217,83 +134,81 @@
                                                     <t t-esc="employee.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="catidad_vacantes">Cantidad de
                                                     Vacantes
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text" class="form-control o_website_form_input" value="1"
                                                    name="catidad_vacantes" required=""/>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="Generos">Género
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="Generos" required="">
                                                 <option></option>
                                                 <option value="MASCULINO">MASCULINO</option>
                                                 <option value="FEMENINO">FEMENINO</option>
                                                 <option value="INDIFERENTE">INDIFERENTE</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="res_city">Ciudad
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="res_city" required="">
                                                 <option></option>
                                                 <option t-foreach="cities" t-as="city" t-att-value="city.id">
                                                     <t t-esc="city.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="sede">Sede
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input"
                                                    name="sede" required=""/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="area">Área (Proceso)
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input"
                                                    name="area" required=""/>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="un_organizativa">Cliente/Proyecto o
                                                     <br/>
                                                     Unidad Organizativa
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="un_organizativa" id="jefe_inmediato"
                                                     required="">
                                                 <option></option>
@@ -302,17 +217,15 @@
                                                     <t t-esc="unidades_rec.nombre_unidad_org"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="centro_de_costo">Numero de Centro de
                                                     Costo
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="centro_de_costo" id="centro_de_costo"
                                                     required="">
                                                 <option></option>
@@ -321,49 +234,52 @@
                                                     <t t-esc="centro_rec.numero"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="centro_costo">Nombre del centro
                                                     <br/>de costo
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input" id="centro_costo"
                                                    name="centro_costo" readonly=""/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="personal_a_cargo">Tiene Personal a
                                                     Cargo
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="personal_a_cargo"
                                                     required="">
                                                 <option></option>
                                                 <option value="SI">SI</option>
                                                 <option value="NO">NO</option>
                                             </select>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div class="text-right">
                                                 <label class="col-form-label" for="masivo">Masivo
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input" id="masivo"
                                                    name="masivo" readonly="true" value="NO"/>
-                                        </td>
-                                    </tr>
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fin Informacion Vacante -->
+                                <div class="dropdown-divider"></div>
+                                
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Información de la Vacante</u>
