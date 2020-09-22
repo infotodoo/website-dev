@@ -22,8 +22,10 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="col-form-label o_website_form_required_custom" for="solicitante">Nombre del Solicitante
-                                            </label>
+                                            <div class="o_website_form_required_custom" >
+                                                <label class="col-form-label" for="solicitante">Nombre del Solicitante
+                                                </label>
+                                            </div>
                                             <select class="form-control" name="solicitante" id="solicitante"
                                                     required="">
                                                 <option></option>
@@ -46,8 +48,11 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="col-form-label o_website_form_required_custom" for="emp">Empresa Cliente
-                                            </label>
+                                            <div class="o_website_form_required_custom">
+                                                <label class="col-form-label" for="emp">Empresa Cliente
+                                                </label>
+                                            </div>
+                                            
                                             <select class="form-control" name="emp" id="emp"
                                                     required="">
                                                 <option></option>
@@ -66,8 +71,10 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                           <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel1">Aprobador Nivel 1
-                                            </label>
+                                            <div class="o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel1">Aprobador Nivel 1
+                                                </label>
+                                            </div>
                                             <select class="form-control" name="aprobador_nivel1" id="aprobador_nivel1"
                                                     required="">
                                                 <option></option>
@@ -79,8 +86,10 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel2">Aprobador Nivel 2
-                                            </label>
+                                            <div class="o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel2">Aprobador Nivel 2
+                                                </label>
+                                            </div>
                                             <select class="form-control" name="aprobador_nivel2" id="aprobador_nivel2"
                                                     required="">
                                                 <option></option>
@@ -93,8 +102,11 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel3">Aprobador Nivel 3
-                                            </label>
+                                            <div class="o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel3">Aprobador Nivel 3
+                                                </label>
+                                            </div>
+                                            
                                             <select class="form-control" name="aprobador_nivel3" id="aprobador_nivel3"
                                                     required="">
                                                 <option></option>
@@ -241,8 +253,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <div class="o_website_form_required_custom">
-                                                <label class="col-form-label" for="centro_costo">Nombre del centro
-                                                    <br/>de costo
+                                                <label class="col-form-label" for="centro_costo">Nombre del centro de costo
                                                 </label>
                                             </div>
                                             <input type="text"
@@ -267,7 +278,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <div class="text-right">
+                                            <div>
                                                 <label class="col-form-label" for="masivo">Masivo
                                                 </label>
                                             </div>
@@ -279,7 +290,7 @@
                                 </div>
                                 <!-- Fin Informacion Vacante -->
                                 <div class="dropdown-divider"></div>
-                                
+
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Información de la Vacante</u>
