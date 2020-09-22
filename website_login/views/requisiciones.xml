@@ -6,6 +6,13 @@
 
             <div class="container">
                 <h1 class="text-center mt-2">Añadir Requisicion</h1>
+                <div class="row mt-3">
+                    <section class="col">
+                        <form id="add_requisicion" action="/create_requisicion" method="post" class="s_website_form"
+                              enctype="multipart/form-data">
+                        </form>
+                    </section>
+                </div>
             </div>
         </t>
     </template>
