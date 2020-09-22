@@ -5,7 +5,7 @@
             <t t-set="additional_title">Añadir Requisicion</t>
 
             <div class="container">
-                <h1>Añadir Requisicion</h1>
+                <h1 class="text-center mt-2">Añadir Requisicion</h1>
             </div>
         </t>
     </template>
