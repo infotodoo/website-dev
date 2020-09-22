@@ -18,7 +18,7 @@
                             <div id="group_1"
                                  style="background-color:#d1f9dd;padding-top:13px;padding-bottom:1px;border-radius: 32px;">
                                  <!-- Informacion solicitante -->
-                                <h3 class="text-left">Información Solicitante</h3>
+                                <h5 class="text-left">Información Solicitante</h5>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -92,20 +92,19 @@
                                         </option>
                                     </select> -->
                                 <!-- fin Informacion solicitante -->
-                                <div class="text-left">
+                                <!-- Aprobaciones -->
+
+                                <!-- <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Aprobaciones</u>
                                     </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel1">Aprobador Nivel 1
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                </div> -->
+                                <h5 class="text-left"><u>Aprobaciones</u></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                           <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel1">Aprobador Nivel 1
+                                            </label>
                                             <select class="form-control" name="aprobador_nivel1" id="aprobador_nivel1"
                                                     required="">
                                                 <option></option>
@@ -113,14 +112,12 @@
                                                     <t t-esc="nivel1.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel2">Aprobador Nivel 2
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel2">Aprobador Nivel 2
+                                            </label>
                                             <select class="form-control" name="aprobador_nivel2" id="aprobador_nivel2"
                                                     required="">
                                                 <option></option>
@@ -128,14 +125,13 @@
                                                     <t t-esc="nivel2.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="aprobador_nivel3">Aprobador Nivel 3
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label o_website_form_required_custom" for="aprobador_nivel3">Aprobador Nivel 3
+                                            </label>
                                             <select class="form-control" name="aprobador_nivel3" id="aprobador_nivel3"
                                                     required="">
                                                 <option></option>
@@ -143,9 +139,48 @@
                                                     <t t-esc="nivel3.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>                         
+                                    
+                                            <!-- <div class="text-right o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel1">Aprobador Nivel 1
+                                                </label>
+                                            </div> -->
+                                            <!-- <select class="form-control" name="aprobador_nivel1" id="aprobador_nivel1"
+                                                    required="">
+                                                <option></option>
+                                                <option t-foreach="nivel1_rec" t-as="nivel1" t-att-value="nivel1.id">
+                                                    <t t-esc="nivel1.name"/>
+                                                </option>
+                                            </select> -->
+
+                                            <!-- <div class="text-right o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel2">Aprobador Nivel 2
+                                                </label>
+                                            </div> -->
+
+                                            <!-- <select class="form-control" name="aprobador_nivel2" id="aprobador_nivel2"
+                                                    required="">
+                                                <option></option>
+                                                <option t-foreach="nivel2_rec" t-as="nivel2" t-att-value="nivel2.id">
+                                                    <t t-esc="nivel2.name"/>
+                                                </option>
+                                            </select> -->
+                                            <!-- <div class="text-right o_website_form_required_custom">
+                                                <label class="col-form-label" for="aprobador_nivel3">Aprobador Nivel 3
+                                                </label>
+                                            </div> -->
+                                            <!-- <select class="form-control" name="aprobador_nivel3" id="aprobador_nivel3"
+                                                    required="">
+                                                <option></option>
+                                                <option t-foreach="nivel3_rec" t-as="nivel3" t-att-value="nivel3.id">
+                                                    <t t-esc="nivel3.name"/>
+                                                </option>
+                                            </select> -->
+                                <!-- fin Aprobaciones -->
+                                <div class="dropdown-divider"></div>
+
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Información Vacante</u>
