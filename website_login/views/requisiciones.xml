@@ -8,7 +8,7 @@
                 <h1 class="text-center mt-2">
                     Añadir Requisicion
                 </h1>
-
+                <div class="dropdown-divider"></div>
                 <div class="row mt-3">
                     <section class="col-md-12">
                         <form id="add_requisicion" action="/create_requisicion" method="post" class="s_website_form"
@@ -19,6 +19,7 @@
                                  style="background-color:#d1f9dd;padding-top:13px;padding-bottom:1px;border-radius: 32px;">
                                  <!-- Informacion solicitante -->
                                 <div class="row">
+                                    <h3>Información Solicitante</h3>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="col-form-label o_website_form_required_custom" for="solicitante">Nombre del Solicitante
@@ -58,6 +59,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="dropdown-divider"></div>
                                 <!-- <div class="text-right o_website_form_required_custom">
                                     <label class="col-form-label" for="solicitante">Nombre del Solicitante
                                     </label>
