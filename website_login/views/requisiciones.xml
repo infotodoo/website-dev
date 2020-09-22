@@ -17,26 +17,49 @@
 
                             <div id="group_1"
                                  style="background-color:#d1f9dd;padding-top:13px;padding-bottom:1px;border-radius: 32px;">
-                                 <!-- base1 -->
-                                    
-                                <div class="text-right o_website_form_required_custom">
+                                 <!-- Informacion solicitante -->
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="solicitante">Nombre del Solicitante
+                                            </label>
+                                            <select class="form-control" name="solicitante" id="solicitante"
+                                                    required="">
+                                                <option></option>
+                                                <option t-foreach="employees" t-as="employee" t-att-value="employee.id">
+                                                    <t t-esc="employee.name"/>
+                                                </option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="cargo_soli">Cargo del Solicitante
+                                            </label>
+                                            <input type="text" id="cargo_soli" class="form-control o_website_form_input"
+                                                   name="cargo_soli" readonly="true"/>       
+                                        </div>
+                                    </div>        
+                                </div>
+                                <!-- <div class="text-right o_website_form_required_custom">
                                     <label class="col-form-label" for="solicitante">Nombre del Solicitante
                                     </label>
-                                </div>    
-                                    <select class="form-control" name="solicitante" id="solicitante"
+                                </div>     -->
+                                    <!-- <select class="form-control" name="solicitante" id="solicitante"
                                                     required="">
                                         <option></option>
                                         <option t-foreach="employees" t-as="employee" t-att-value="employee.id">
                                             <t t-esc="employee.name"/>
                                         </option>
-                                    </select>
+                                    </select> -->
                                         
-                                    <div class="text-right">
+                                    <!-- <div class="text-right">
                                         <label class="col-form-label" for="cargo_soli">Cargo del Solicitante
                                         </label>
                                     </div>
                                     <input type="text" id="cargo_soli" class="form-control o_website_form_input"
-                                                   name="cargo_soli" readonly="true"/>
+                                                   name="cargo_soli" readonly="true"/> -->
                                         
                                     <div class="text-right o_website_form_required_custom">
                                         <label class="col-form-label" for="emp">Empresa Cliente
@@ -50,7 +73,7 @@
                                             <t t-esc="company.name"/>
                                         </option>
                                     </select>
-                                <!-- fin base1 -->
+                                <!-- fin Informacion solicitante -->
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Aprobaciones</u>
