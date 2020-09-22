@@ -10,7 +10,7 @@
                 </h1>
 
                 <div class="row mt-3">
-                    <section class="col">
+                    <section class="col-md-12">
                         <form id="add_requisicion" action="/create_requisicion" method="post" class="s_website_form"
                               enctype="multipart/form-data">
                             <!--                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>-->
@@ -21,7 +21,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="col-form-label" for="solicitante">Nombre del Solicitante
+                                            <label class="col-form-label o_website_form_required_custom" for="solicitante">Nombre del Solicitante
                                             </label>
                                             <select class="form-control" name="solicitante" id="solicitante"
                                                     required="">
@@ -42,6 +42,22 @@
                                         </div>
                                     </div>        
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="col-form-label o_website_form_required_custom" for="emp">Empresa Cliente
+                                            </label>
+                                            <select class="form-control" name="emp" id="emp"
+                                                    required="">
+                                                <option></option>
+                                                <option t-foreach="companies" t-as="company" t-att-value="company.id"
+                                                        t-att-selected="company.id == company_current.id">
+                                                    <t t-esc="company.name"/>
+                                                </option>
+                                            </select>      
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- <div class="text-right o_website_form_required_custom">
                                     <label class="col-form-label" for="solicitante">Nombre del Solicitante
                                     </label>
@@ -61,7 +77,7 @@
                                     <input type="text" id="cargo_soli" class="form-control o_website_form_input"
                                                    name="cargo_soli" readonly="true"/> -->
                                         
-                                    <div class="text-right o_website_form_required_custom">
+                                    <!-- <div class="text-right o_website_form_required_custom">
                                         <label class="col-form-label" for="emp">Empresa Cliente
                                         </label>
                                     </div>
@@ -72,7 +88,7 @@
                                                         t-att-selected="company.id == company_current.id">
                                             <t t-esc="company.name"/>
                                         </option>
-                                    </select>
+                                    </select> -->
                                 <!-- fin Informacion solicitante -->
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
