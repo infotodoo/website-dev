@@ -397,6 +397,21 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
+                                            <div class="o_website_form_required_custom">
+                                                <label class="col-form-label" for="turn">Turno
+                                                </label>
+                                            </div>
+                                            <select class="form-control" name="turn" id="turn"
+                                                    required="">
+                                                <option></option>
+                                                <option value="FIJO">FIJO</option>
+                                                <option value="ROTATIVO">ROTATIVO</option>
+                                            </select>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div id="contrato_inicial_div_a" style="display:none;">
                                                 <div class="o_website_form_required_custom">
                                                     <label class="col-form-label" for="tiempo_de_contrato_inicial">Tiempo de Contrato Inicial
@@ -431,21 +446,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <div class="o_website_form_required_custom">
-                                                <label class="col-form-label" for="turn">Turno
-                                                </label>
-                                            </div>
-                                            <select class="form-control" name="turn" id="turn"
-                                                    required="">
-                                                <option></option>
-                                                <option value="FIJO">FIJO</option>
-                                                <option value="ROTATIVO">ROTATIVO</option>
-                                            </select>
-                                            
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="row">
                                     <div class="col-md-4">
@@ -518,8 +519,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="nivel_riesgo">Porcentaje Nivel de
-                                                    <br/>RIESGO ARL
+                                                <label class="col-form-label" for="nivel_riesgo">Porcentaje Nivel de RIESGO ARL
                                                 </label>
                                             </div>
                                             <input type="text"
@@ -532,21 +532,15 @@
            
                                 <!-- FIN CONTRATO -->
                                 <div class="dropdown-divider"></div>
-
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Justificación</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 123px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                <!-- JUSTIFICACION -->
+                                <h5 class="text-left"><u>Justificación</u></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="mo_solicitud">Motivo de Solicitud
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="mo_solicitud" id="mo_solicitud"
                                                     required="">
                                                 <option></option>
@@ -563,45 +557,46 @@
                                                 <option value="CREACIÓN DE CARGO">CREACIÓN DE CARGO</option>
                                                 <option value="PENSIÓN">PENSIÓN</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="per_quien_reemplaza">Persona a
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="per_quien_reemplaza">Persona a
                                                     quien Reemplaza
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                            </label>
                                             <select class="form-control" name="per_quien_reemplaza">
                                                 <option></option>
                                                 <option t-foreach="employees" t-as="employee" t-att-value="employee.id">
                                                     <t t-esc="employee.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="cargo_pre">Cargo Presupuestado
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="cargo_pre"
                                                     required="">
                                                 <option></option>
                                                 <option value="Si">SI</option>
                                                 <option value="No">NO</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="tipo_de_salario">Tipo de Salario
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="tipo_de_salario" id="tipo_de_salario"
                                                     required="">
                                                 <option></option>
@@ -609,28 +604,26 @@
                                                 <option value="SALARIO INTEGRAL">SALARIO INTEGRAL</option>
                                                 <option value="APOYO SOSTENIMIENTO">APOYO SOSTENIMIENTO</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="wage">Salario
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input"
                                                    id="wage" required=""
                                                    name="wage"/>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="pacto_con">Pacto / Convención
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="pacto_con" id="pacto_con"
                                                     required="">
                                                 <option></option>
@@ -638,22 +631,26 @@
                                                 <option value="CONVENCIÓN COLECTIVA DE TRABAJO">CONVENCIÓN COLECTIVA DE TRABAJO</option>
                                                 <option value="NO APLICA">NO APLICA</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="docuemnto_ref">Documento Referido
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="docuemnto_ref">Documento Referido
+                                            </label>
                                             <input type="file" class="form-control o_website_form_input"
                                                    style="padding:2px;"
                                                    name="docuemnto_ref"/>
-                                        </td>
-                                    </tr>
-                                </table>
+
+                                        </div>
+                                    </div>
+
+                                </div>                                            
+                                <!-- FIN JUSTIFICACION -->
+                                <div class="dropdown-divider"></div>
+                                
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Beneficios</u>
