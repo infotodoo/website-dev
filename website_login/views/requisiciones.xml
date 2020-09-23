@@ -293,7 +293,7 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <div class="text-right o_website_form_required_custom">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_entrevista">Requiere
                                                     Entrevista con Jefe Inmediato
                                                 </label>
@@ -308,7 +308,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <div class="text-right o_website_form_required_custom">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_prueba">Requiere Prueba
                                                     Técnica
                                                 </label>
@@ -323,7 +323,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <div class="text-right o_website_form_required_custom">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_studio_seguridad">Requiere
                                                     Estudio de Seguridad
                                                 </label>
@@ -343,15 +343,13 @@
 
                                 <!-- CONTRATO -->
                                 <h5 class="text-left"><u>Contrato</u></h5>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="tipo_contrato">Tipo de Contrato
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="tipo_contrato" id="tipo_contrato"
                                                     required="">
                                                 <option></option>
@@ -363,87 +361,99 @@
                                                 <option value="APRENDIZAJE">APRENDIZAJE</option>
                                                 <option value="DIARIO">DIARIO</option>
                                             </select>
-                                        </td>
-                                        <td id="tipo_contrato_a" style="display:none;">
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="cliente1">Cliente
-                                                </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div id="tipo_contrato_a" style="display:none;">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="cliente1">Cliente
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </td>
-                                        <td id="tipo_contrato_b" style="display:none;">
-                                            <input type="text"
-                                                   class="form-control o_website_form_input" id="cliente1"
-                                                   name="cliente1"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-
-                                        <td id="tipo_contrato_c" style="display:none;">
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="no_contrato_comercial">No. Contrato
-                                                    Comercial
-                                                </label>
+                                            <div id="tipo_contrato_b" style="display:none;">
+                                                <input type="text"
+                                                    class="form-control o_website_form_input" id="cliente1"
+                                                    name="cliente1"/>
                                             </div>
-                                        </td>
-                                        <td id="tipo_contrato_d" style="display:none;">
-                                            <input type="text"
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div id="tipo_contrato_c" style="display:none;">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="no_contrato_comercial">No. Contrato Comercial
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div id="tipo_contrato_d" style="display:none;">
+                                                <input type="text"
                                                    class="form-control o_website_form_input" id="no_contrato_comercial"
                                                    name="no_contrato_comercial"/>
-                                        </td>
-                                        <td id="contrato_inicial_div_a" style="display:none;">
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="tiempo_de_contrato_inicial">Tiempo de
-                                                    Contrato Inicial
-                                                </label>
                                             </div>
-                                        </td>
-                                        <td id="contrato_inicial_div_b" style="display:none;">
-                                            <input type="text"
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div id="contrato_inicial_div_a" style="display:none;">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="tiempo_de_contrato_inicial">Tiempo de Contrato Inicial
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div id="contrato_inicial_div_b" style="display:none;">
+                                                <input type="text"
                                                    class="form-control o_website_form_input"
                                                    id="tiempo_de_contrato_inicial"
                                                    name="tiempo_de_contrato_inicial"/>
-                                        </td>
-                                    </tr>
-                                    <tr id="rango_visible" style="display:none;">
-                                        <td>
-                                            <div class="text-right" id="rango_div">
-                                                <label class="col-form-label" for="rango">Rango
-                                                </label>
                                             </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="rango" id="rango">
-                                                <option></option>
-                                                <option value="DÍAS">DÍAS</option>
-                                                <option value="MESES">MESES</option>
-                                                <option value="AÑOS">AÑOS</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 123px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div id="rango_visible" style="display:none;">
+                                        
+                                                <div class="" id="rango_div">
+                                                    <label class="col-form-label" for="rango">Rango
+                                                    </label>
+                                                </div>
+                                        
+                                                <select class="form-control" name="rango" id="rango">
+                                                    <option></option>
+                                                    <option value="DÍAS">DÍAS</option>
+                                                    <option value="MESES">MESES</option>
+                                                    <option value="AÑOS">AÑOS</option>
+                                                </select>
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="turn">Turno
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="turn" id="turn"
                                                     required="">
                                                 <option></option>
                                                 <option value="FIJO">FIJO</option>
                                                 <option value="ROTATIVO">ROTATIVO</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="horari">Horario de Trabajo
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="horari" id="horari"
                                                     required="">
                                                 <option></option>
@@ -451,32 +461,31 @@
                                                     <t t-esc="calendar.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="manejo_vacaciones">Horario / Manejo
                                                     de Vacaciones
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="manejo_vacaciones" id="manejo_vacaciones"
                                                     required="">
                                                 <option></option>
                                                 <option value="L-V">L-V</option>
                                                 <option value="L-S">L-S</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="manejo_incapacidades">Manejo de
-                                                    Incapacidades<br/>Generales
+                                                    Incapacidades Generales
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="manejo_incapacidades"
                                                     id="manejo_incapacidades"
                                                     required="">
@@ -484,16 +493,16 @@
                                                 <option value="PAGAR AL 66.66%">PAGAR AL 66.66%</option>
                                                 <option value="PAGAR AL 100%">PAGAR AL 100%</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="o_website_form_required_custom">
                                                 <label class="col-form-label" for="nivel_riesgo_arl">Nivel de Riesgo ARL
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="nivel_riesgo_arl"
                                                     id="nivel_riesgo_arl"
                                                     required="">
@@ -504,22 +513,23 @@
                                                 <option value="4 RIESGO IV">4 RIESGO IV</option>
                                                 <option value="5 RIESGO V">5 RIESGO V</option>
                                             </select>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div class="text-right o_website_form_required_custom">
                                                 <label class="col-form-label" for="nivel_riesgo">Porcentaje Nivel de
                                                     <br/>RIESGO ARL
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <input type="text"
                                                    class="form-control o_website_form_input"
                                                    id="nivel_riesgo"
                                                    name="nivel_riesgo" required="" readonly="true"/>
-                                        </td>
-                                    </tr>
-                                </table>
+                                        </div>
+                                    </div>
+                                </div>
+           
                                 <!-- FIN CONTRATO -->
                                 <div class="dropdown-divider"></div>
 
