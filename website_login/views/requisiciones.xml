@@ -216,9 +216,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <div class="o_website_form_required_custom">
-                                                <label class="col-form-label" for="un_organizativa">Cliente/Proyecto o
-                                                    <br/>
-                                                    Unidad Organizativa
+                                                <label class="col-form-label" for="un_organizativa">Cliente/Proyecto o Unidad Organizativa
                                                 </label>
                                             </div>
                                             <select class="form-control" name="un_organizativa" id="jefe_inmediato"
@@ -290,54 +288,46 @@
                                 </div>
                                 <!-- Fin Informacion Vacante -->
                                 <div class="dropdown-divider"></div>
-
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Información de la Vacante</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 123px;">
-                                    <tr>
-                                        <td>
+                                <!-- Informacion de la Vacante -->
+                                <h5 class="text-left"><u>Información de la Vacante</u></h5>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div class="text-right o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_entrevista">Requiere
-                                                    Entrevista con<br/>Jefe Inmediato
+                                                    Entrevista con Jefe Inmediato
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="requiere_entrevista"
                                                     required="">
                                                 <option></option>
                                                 <option value="SI">SI</option>
                                                 <option value="NO">NO</option>
                                             </select>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div class="text-right o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_prueba">Requiere Prueba
                                                     Técnica
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="requiere_prueba"
                                                     required="">
                                                 <option></option>
                                                 <option value="SI">SI</option>
                                                 <option value="NO">NO</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
                                             <div class="text-right o_website_form_required_custom">
                                                 <label class="col-form-label" for="requiere_studio_seguridad">Requiere
                                                     Estudio de Seguridad
                                                 </label>
                                             </div>
-                                        </td>
-                                        <td>
                                             <select class="form-control" name="requiere_studio_seguridad"
                                                     id="requiere_studio_seguridad"
                                                     required="">
@@ -345,14 +335,14 @@
                                                 <option value="SI">SI</option>
                                                 <option value="NO">NO</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Contrato</u>
-                                    </label>
-                                </div>
+                                        </div>
+                                    </div>
+                                </div>         
+                                <!-- FIN Informacion de la Vacante -->
+                                <div class="dropdown-divider"></div>
+
+                                <!-- CONTRATO -->
+                                <h5 class="text-left"><u>Contrato</u></h5>
                                 <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
                                     <tr>
                                         <td>
@@ -530,6 +520,9 @@
                                         </td>
                                     </tr>
                                 </table>
+                                <!-- FIN CONTRATO -->
+                                <div class="dropdown-divider"></div>
+
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Justificación</u>
