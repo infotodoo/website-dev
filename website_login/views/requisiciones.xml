@@ -15,10 +15,9 @@
                               enctype="multipart/form-data">
                             <!--                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>-->
 
-                            <div id="group_1"
-                                 style="background-color:#d1f9dd;padding-top:13px;padding-bottom:1px;border-radius: 32px;">
+                            <div id="group_1">
                                  <!-- Informacion solicitante -->
-                                <h5 class="text-left">Información Solicitante</h5>
+                                <h4 class="text-left">Información Solicitante</h4>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -67,7 +66,7 @@
                                 <!-- fin Informacion solicitante -->
                                 <div class="dropdown-divider"></div>
                                 <!-- Aprobaciones -->
-                                <h5 class="text-left"><u>Aprobaciones</u></h5>
+                                <h4 class="text-left"><u>Aprobaciones</u></h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -120,7 +119,7 @@
                                 <!-- fin Aprobaciones -->
                                 <div class="dropdown-divider"></div>
                                 <!-- Informacion Vacante -->
-                                <h5 class="text-left"><u>Información Vacante</u></h5>
+                                <h4 class="text-left"><u>Información Vacante</u></h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -289,7 +288,7 @@
                                 <!-- Fin Informacion Vacante -->
                                 <div class="dropdown-divider"></div>
                                 <!-- Informacion de la Vacante -->
-                                <h5 class="text-left"><u>Información de la Vacante</u></h5>
+                                <h4 class="text-left"><u>Información de la Vacante</u></h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -342,7 +341,7 @@
                                 <div class="dropdown-divider"></div>
 
                                 <!-- CONTRATO -->
-                                <h5 class="text-left"><u>Contrato</u></h5>
+                                <h4 class="text-left"><u>Contrato</u></h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -533,7 +532,7 @@
                                 <!-- FIN CONTRATO -->
                                 <div class="dropdown-divider"></div>
                                 <!-- JUSTIFICACION -->
-                                <h5 class="text-left"><u>Justificación</u></h5>
+                                <h4 class="text-left"><u>Justificación</u></h4>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -810,8 +809,7 @@
                                             <div id="aux_rodamiento_c" style="display: none;">
                                                 <div class="o_website_form_required_custom">
                                                     <label class="col-form-label" for="Auxilio_de_Rodamiento_a_partir_de">
-                                                        Auxilio
-                                                        de Rodamiento fijo a partir de
+                                                        Auxilio de Rodamiento fijo a partir de
                                                     </label>
                                                 </div>
                                             </div>
@@ -832,8 +830,7 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label class="col-form-label" for="aux_rodamiento_pro">Auxilio de
-                                                Rodamiento proporcional
+                                            <label class="col-form-label" for="aux_rodamiento_pro">Auxilio de Rodamiento proporcional
                                             </label>
                                             <select class="form-control" name="aux_rodamiento_pro"
                                                     id="aux_rodamiento_pro">
