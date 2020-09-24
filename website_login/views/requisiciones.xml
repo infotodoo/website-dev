@@ -1116,7 +1116,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                             <label class="col-form-label" for="otro">Otro
                                             </label>
@@ -1129,7 +1129,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                             <div id="otro_a" style="display: none;">
                                                 <div class="o_website_form_required_custom">
@@ -1147,7 +1147,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                             <div id="otro_c" style="display: none;">
                                                 <div class="o_website_form_required_custom">
@@ -1170,7 +1170,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                </div>
+                                <!-- COntinuacion de los campos de OTRO -->
+                                <div class="row">
+                                    <div class="col-md-4">
                                         <div class="form-group">
                                             <div id="otro_e" style="display: none;">
                                                 <div class="o_website_form_required_custom">
@@ -1193,6 +1196,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- FIN COntinuacion de los campos de OTRO -->
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
