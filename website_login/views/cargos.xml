@@ -106,7 +106,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <div class="o_website_form_required_custom">
-                                                    <label class="col-form-label" for="name">Nombre del Cargo
+                                                    <label class="col-form-label" for="name">Nombre del Cargo prueba
                                                     </label>
                                                 </div>
                                                 <input type="text" id="name" required=""
