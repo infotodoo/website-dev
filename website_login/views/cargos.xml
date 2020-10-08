@@ -99,14 +99,14 @@
 
                             <div id="group_2"
                                  style="background-color:  #d1f9dd;padding-top:13px;padding-bottom:1px; display:none;">
-                                 <div class="container">
+                                <div class="container">
                                     <!-- IDENTIFICACION DEL CARGO -->
                                     <h2 class="text-center">Identificación del Cargo </h2>
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <div class="o_website_form_required_custom">
-                                                    <label class="col-form-label" for="name">Nombre del Cargo prueba
+                                                    <label class="col-form-label" for="name">Nombre del Cargo
                                                     </label>
                                                 </div>
                                                 <input type="text" id="name" required=""
@@ -179,12 +179,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                 </div>
+                                </div>
                                 <!-- FIN IDENTIFICACION DEL CARGO -->
                                 <div class="dropdown-divider"></div>
                                 <!-- PERSONAL A CARGO -->
                                 <h4 class="text-left">
-                                    <ul>Personal que depende Directa e Indirectamente del Cargo<ul>
+                                    <ul>Personal que depende Directa e Indirectamente del Cargo</ul>
                                         
                                 </h4>
                                 <div class="row">
