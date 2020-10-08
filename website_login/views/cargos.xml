@@ -179,252 +179,219 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- FIN IDENTIFICACION DEL CARGO -->
-                                <div class="dropdown-divider"></div>
-                                <!-- PERSONAL A CARGO -->
-                                <h3 class="text-left">
-                                    <u>Personal que depende Directa e Indirectamente del Cargo</u>
+                                    <!-- FIN IDENTIFICACION DEL CARGO -->
+                                    <div class="dropdown-divider"></div>
+                                    <!-- PERSONAL A CARGO -->
+                                    <h3 class="text-center">
+                                        <u>Personal que depende Directa e Indirectamente del Cargo</u>
+                                            
+                                    </h3>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="tiene_personal_cargo">¿Tiene personal
+                                                        a cargo?
+                                                    </label>
+                                                </div>
+                                                <select class="form-control" name="tiene_personal_cargo"
+                                                        id="tiene_personal_cargo"
+                                                        required="">
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="corgos_table">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="col-form-label" for="cargo1">Cargo 1
+                                                    </label>
+                                                    <select class="form-control" name="cargo1" id="cargo1">
+                                                        <option></option>
+                                                        <option t-foreach="jobs" t-as="job" t-att-value="job.id">
+                                                            <t t-esc="job.name"/>
+                                                        </option>
+                                                    </select>
+                                                    <label class="col-form-label" for="tipo_relacion1">Tipo de Relación 1
+                                                    </label>
+                                                    <select class="form-control" name="tipo_relacion1" id="tipo_relacion1">
+                                                        <option></option>
+                                                        <option value="DIRECTA">DIRECTA</option>
+                                                        <option value="INDIRECTA">INDIRECTA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="col-form-label" for="cargo2">Cargo 2
+                                                    </label>
+                                                    <select class="form-control" name="cargo2" id="cargo2">
+                                                        <option></option>
+                                                        <option t-foreach="jobs" t-as="job" t-att-value="job.id">
+                                                            <t t-esc="job.name"/>
+                                                        </option>
+                                                    </select>
+                                                    <label class="col-form-label" for="tipo_relacion2">Tipo de Relación 2
+                                                    </label>
+                                                    <select class="form-control" name="tipo_relacion2" id="tipo_relacion2">
+                                                        <option></option>
+                                                        <option value="DIRECTA">DIRECTA</option>
+                                                        <option value="INDIRECTA">INDIRECTA</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="col-form-label" for="cargo3">Cargo 3
+                                                    </label>
+                                                    <select class="form-control" name="cargo3" id="cargo3">
+                                                        <option></option>
+                                                        <option t-foreach="jobs" t-as="job" t-att-value="job.id">
+                                                            <t t-esc="job.name"/>
+                                                        </option>
+                                                    </select>
+                                                    <label class="col-form-label" for="tipo_relacion3">Tipo de Relación 3
+                                                    </label>
+                                                    <select class="form-control" name="tipo_relacion3" id="tipo_relacion3">
+                                                        <option></option>
+                                                        <option value="DIRECTA">DIRECTA</option>
+                                                        <option value="INDIRECTA">INDIRECTA</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="col-form-label" for="cargo4">Cargo 4
+                                                    </label>
+                                                    <select class="form-control" name="cargo4" id="cargo4">
+                                                        <option></option>
+                                                        <option t-foreach="jobs" t-as="job" t-att-value="job.id">
+                                                            <t t-esc="job.name"/>
+                                                        </option>
+                                                    </select>
+                                                    <label class="col-form-label" for="tipo_relacion4">Tipo de Relación 4
+                                                    </label>
+                                                    <select class="form-control" name="tipo_relacion4" id="tipo_relacion4">
+                                                        <option></option>
+                                                        <option value="DIRECTA">DIRECTA</option>
+                                                        <option value="INDIRECTA">INDIRECTA</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   
+                                  
+                                    <!-- FIN PERSONAL A CARGO -->
+                                    <div class="dropdown-divider"></div>
+                                    <!-- Especificaciones cargo -->
+                                    <div class="text-center">
+                                        <h4>
+                                            <label class="col-form-label">Especificaciones Del Cargo
+                                            </label>
+                                        </h4>
+                                        <p class="text-muted">
+                                            La especificación describe las competencias y demandas que el cargo exige a
+                                            quien lo ocupe
+                                        </p>
+                                    </div>
+                                    <div class="text-center">
+                                        <h3>
+                                            <label class="col-form-label">Competencias Requeridas para el Cargo
+                                            </label>
+                                        </h3>
+                                    </div>
+                                    <h5><u>Educación</u></h5>
+                                    <div class="row">
                                         
-                                </h3>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <div class="o_website_form_required_custom">
-                                                <label class="col-form-label" for="tiene_personal_cargo">¿Tiene personal
-                                                    a cargo?
-                                                </label>
-                                            </div>
-                                            <select class="form-control" name="tiene_personal_cargo"
-                                                    id="tiene_personal_cargo"
-                                                    required="">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="col-form-label" for="cargo1">Cargo 1
-                                            </label>
-                                            <select class="form-control" name="cargo1" id="cargo1">
-                                                <option></option>
-                                                <option t-foreach="jobs" t-as="job" t-att-value="job.id">
-                                                    <t t-esc="job.name"/>
-                                                </option>
-                                            </select>
-                                            <label class="col-form-label" for="tipo_relacion1">Tipo de Relación 1
-                                            </label>
-                                            <select class="form-control" name="tipo_relacion1" id="tipo_relacion1">
-                                                <option></option>
-                                                <option value="DIRECTA">DIRECTA</option>
-                                                <option value="INDIRECTA">INDIRECTA</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="col-form-label" for="cargo2">Cargo 2
-                                            </label>
-                                            <select class="form-control" name="cargo2" id="cargo2">
-                                                <option></option>
-                                                <option t-foreach="jobs" t-as="job" t-att-value="job.id">
-                                                    <t t-esc="job.name"/>
-                                                </option>
-                                            </select>
-                                            <label class="col-form-label" for="tipo_relacion2">Tipo de Relación 2
-                                            </label>
-                                            <select class="form-control" name="tipo_relacion2" id="tipo_relacion2">
-                                                <option></option>
-                                                <option value="DIRECTA">DIRECTA</option>
-                                                <option value="INDIRECTA">INDIRECTA</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="col-form-label" for="cargo3">Cargo 3
-                                            </label>
-                                            <select class="form-control" name="cargo3" id="cargo3">
-                                                <option></option>
-                                                <option t-foreach="jobs" t-as="job" t-att-value="job.id">
-                                                    <t t-esc="job.name"/>
-                                                </option>
-                                            </select>
-                                            <label class="col-form-label" for="tipo_relacion3">Tipo de Relación 3
-                                            </label>
-                                            <select class="form-control" name="tipo_relacion3" id="tipo_relacion3">
-                                                <option></option>
-                                                <option value="DIRECTA">DIRECTA</option>
-                                                <option value="INDIRECTA">INDIRECTA</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- FIN PERSONAL A CARGO -->
-                                <div class="dropdown-divider"></div>
-                                
-                                
-                                <table id="corgos_table"
-                                       style="border-spacing: 10px; border-collapse: separate; margin-left: 155px; display:none;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="cargo4">Cargo 4
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="cargo4" id="cargo4">
-                                                <option></option>
-                                                <option t-foreach="jobs" t-as="job" t-att-value="job.id">
-                                                    <t t-esc="job.name"/>
-                                                </option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="tipo_relacion4">Tipo de Relación 3
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="tipo_relacion4" id="tipo_relacion4">
-                                                <option></option>
-                                                <option value="DIRECTA">DIRECTA</option>
-                                                <option value="INDIRECTA">INDIRECTA</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div class="text-center">
-                                    <h4>
-                                        <label class="col-form-label">Especificaciones Del Cargo
-                                        </label>
-                                    </h4>
-                                    <p class="text-muted">
-                                        La especificación describe las competencias y demandas que el cargo exige a
-                                        quien lo ocupe
-                                    </p>
-                                </div>
-                                <div class="text-center">
-                                    <h5>
-                                        <label class="col-form-label">Competencias Requeridas para el Cargo
-                                        </label>
-                                    </h5>
-                                </div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Educación</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="nivel_primario_educativo_minimo">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="nivel_primario_educativo_minimo">
                                                     Nivel
-                                                    Primario Educativo<br/>Mínimo Requerido
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="nivel_primario_educativo_minimo"
+                                                    Primario Educativo Mínimo Requerido
+                                                    </label>
+                                                </div>
+                                                <select class="form-control" name="nivel_primario_educativo_minimo"
                                                     id="nivel_primario_educativo_minimo"
                                                     required="">
-                                                <option></option>
-                                                <option value="BACHILLER">BACHILLER</option>
-                                                <option value="TECNICO">TECNICO</option>
-                                                <option value="TECNOLOGICO">TECNOLOGICO</option>
-                                                <option value="PROFESIONAL">PROFESIONAL</option>
-                                                <option value="N/A">N/A</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="nombre_programa_carrera">Nombre del
-                                                    Programa o Carrera
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control o_website_form_input"
+                                                    <option></option>
+                                                    <option value="BACHILLER">BACHILLER</option>
+                                                    <option value="TECNICO">TECNICO</option>
+                                                    <option value="TECNOLOGICO">TECNOLOGICO</option>
+                                                    <option value="PROFESIONAL">PROFESIONAL</option>
+                                                    <option value="N/A">N/A</option>
+                                                </select>
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="nombre_programa_carrera">Nombre del
+                                                        Programa o Carrera
+                                                    </label>
+                                                    
+                                                </div>
+                                                <input type="text" class="form-control o_website_form_input"
                                                    id="nombre_programa_carrera" required=""
                                                    name="nombre_programa_carrera"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
                                                 <label class="col-form-label" for="nivel_secundario_educativo">Nivel
                                                     Secundario
-                                                    Educativo<br/>Requerido
+                                                    Educativo Requerido
                                                 </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="nivel_secundario_educativo"
+                                                <select class="form-control" name="nivel_secundario_educativo"
                                                     id="nivel_secundario_educativo">
-                                                <option></option>
-                                                <option value="ESPECIALISTA">ESPECIALISTA</option>
-                                                <option value="MAGISTER">MAGISTER</option>
-                                                <option value="N/A">N/A</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
+                                                    <option></option>
+                                                    <option value="ESPECIALISTA">ESPECIALISTA</option>
+                                                    <option value="MAGISTER">MAGISTER</option>
+                                                    <option value="N/A">N/A</option>
+                                                </select>
                                                 <label class="col-form-label" for="nombre_programa">Nombre del Programa
                                                 </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control o_website_form_input"
+                                                <input type="text" class="form-control o_website_form_input"
                                                    id="nombre_programa"
                                                    name="nombre_programa"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
                                                 <label class="col-form-label" for="requiere_tarjeta_profesional">
                                                     Requiere
-                                                    tarjeta y/o<br/>Licencia profesional
+                                                    tarjeta y/o Licencia profesional
                                                 </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="requiere_tarjeta_profesional"
+                                                <select class="form-control" name="requiere_tarjeta_profesional"
                                                     id="requiere_tarjeta_profesional">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
-                                    <td>
-                                        <div class="text-right">
-                                            <label class="col-form-label">Homologación
-                                            </label>
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                                <label class="col-form-label">Homologación
+                                                </label>
+                                                <div>
+                                                    <t t-if="homologacion">
+                                                        <a t-att-href="'/attachment/download?attachment_id=%i' % homologacion.id">
+                                                            <span class="fa fa-download">Homologación</span>
+                                                        </a>
+                                                    </t>
+                                                </div>
+                                                
+                                            </div>
                                         </div>
-                                    </td>
-                                    <td>
-                                        <div>
-                                            <t t-if="homologacion">
-                                                <a t-att-href="'/attachment/download?attachment_id=%i' % homologacion.id">
-                                                    <span class="fa fa-download">Homologación</span>
-                                                </a>
-                                            </t>
-                                        </div>
-                                    </td>
-                                </table>
+                                    </div>
+                                    <!--FIN Especificaciones cargo -->
+                                    <div class="text-center">   
+                                </div>
+                                
+                                
                                 <textarea class="form-control o_website_form_input" style="display:none;"
                                           id="formacion_esp" name="formacion_esp"></textarea>
                                 <div style="background-color:azure; height:10px;"></div>
