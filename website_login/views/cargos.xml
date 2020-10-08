@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
-                                                <div class="text-right o_website_form_required_custom">
+                                                <div class="o_website_form_required_custom">
                                                     <label class="col-form-label" for="company_id">Empresa
                                                     </label>
                                                 </div>
@@ -183,10 +183,10 @@
                                 <!-- FIN IDENTIFICACION DEL CARGO -->
                                 <div class="dropdown-divider"></div>
                                 <!-- PERSONAL A CARGO -->
-                                <h4 class="text-left">
-                                    <ul>Personal que depende Directa e Indirectamente del Cargo</ul>
+                                <h3 class="text-left">
+                                    <u>Personal que depende Directa e Indirectamente del Cargo</u>
                                         
-                                </h4>
+                                </h3>
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -206,99 +206,73 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- FIN PERSONAL A CARGO -->
-                                <div class="dropdown-divider"></div>
-                                
-                                
-                                <table id="corgos_table"
-                                       style="border-spacing: 10px; border-collapse: separate; margin-left: 155px; display:none;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="cargo1">Cargo 1
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="cargo1">Cargo 1
+                                            </label>
                                             <select class="form-control" name="cargo1" id="cargo1">
                                                 <option></option>
                                                 <option t-foreach="jobs" t-as="job" t-att-value="job.id">
                                                     <t t-esc="job.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="tipo_relacion1">Tipo de Relación 1
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                            <label class="col-form-label" for="tipo_relacion1">Tipo de Relación 1
+                                            </label>
                                             <select class="form-control" name="tipo_relacion1" id="tipo_relacion1">
                                                 <option></option>
                                                 <option value="DIRECTA">DIRECTA</option>
                                                 <option value="INDIRECTA">INDIRECTA</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="cargo2">Cargo 2
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="cargo2">Cargo 2
+                                            </label>
                                             <select class="form-control" name="cargo2" id="cargo2">
                                                 <option></option>
                                                 <option t-foreach="jobs" t-as="job" t-att-value="job.id">
                                                     <t t-esc="job.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="tipo_relacion2">Tipo de Relación 2
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                            <label class="col-form-label" for="tipo_relacion2">Tipo de Relación 2
+                                            </label>
                                             <select class="form-control" name="tipo_relacion2" id="tipo_relacion2">
                                                 <option></option>
                                                 <option value="DIRECTA">DIRECTA</option>
                                                 <option value="INDIRECTA">INDIRECTA</option>
                                             </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="cargo3">Cargo 3
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="col-form-label" for="cargo3">Cargo 3
+                                            </label>
                                             <select class="form-control" name="cargo3" id="cargo3">
                                                 <option></option>
                                                 <option t-foreach="jobs" t-as="job" t-att-value="job.id">
                                                     <t t-esc="job.name"/>
                                                 </option>
                                             </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="tipo_relacion3">Tipo de Relación 3
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
+                                            <label class="col-form-label" for="tipo_relacion3">Tipo de Relación 3
+                                            </label>
                                             <select class="form-control" name="tipo_relacion3" id="tipo_relacion3">
                                                 <option></option>
                                                 <option value="DIRECTA">DIRECTA</option>
                                                 <option value="INDIRECTA">INDIRECTA</option>
                                             </select>
-                                        </td>
-                                    </tr>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- FIN PERSONAL A CARGO -->
+                                <div class="dropdown-divider"></div>
+                                
+                                
+                                <table id="corgos_table"
+                                       style="border-spacing: 10px; border-collapse: separate; margin-left: 155px; display:none;">
                                     <tr>
                                         <td>
                                             <div class="text-right">
