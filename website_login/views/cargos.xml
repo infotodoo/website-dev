@@ -205,7 +205,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="corgos_table">
+                                    <div id="corgos_table" style="display:none;">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="form-group">
@@ -387,41 +387,115 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <textarea class="form-control o_website_form_input" style="display:none;"
+                                                id="formacion_esp" name="formacion_esp"></textarea>
+                                            <div style="background-color:azure; height:10px;"></div>
+                                            <!-- CONSIDER-->
+                                            <input type="hidden" class="form-control"
+                                                    id="no_of_formacion_especifica" value="0"
+                                                    name="no_of_formacion_especifica"/>
+                                            <input type="hidden" class="form-control"
+                                                   id="formacion_especifica_to_remove"
+                                                   name="formacion_especifica_to_remove"/>
+
+                                            <table id="formacion_append" class="table-striped table"
+                                                style="margin-left: 38px;width:93%">
+                                                <thead style="font-size: 15px;">
+                                                    <tr>
+                                                        <b>
+                                                            <th>Formación Especifica</th>
+                                                            <th>Certificado Académico</th>
+                                                            <th>Prueba Técnica</th>
+                                                            <th>Certificado Laboral Funciones</th>
+                                                            <th></th>
+                                                        </b>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="formacion_body">
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <div class="row" id="formacion_table">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="formacion_especifica">Formación
+                                                    Especifica
+                                                </label>
+                                                <input type="text" class="form-control o_website_form_input"
+                                                   id="formacion_especifica"
+                                                   name="formacion_especifica"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="certificado_academico">Certificado
+                                                    Académico
+                                                </label>
+                                                <select class="form-control" name="certificado_academico"
+                                                    id="certificado_academico">
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="prueba_tecnica">Prueba Técnica
+                                                </label>
+                                                <select class="form-control" name="prueba_tecnica" id="prueba_tecnica">
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="certificado_laboral_funciones">
+                                                    Certificado Laboral Funciones
+                                                </label>
+                                                <select class="form-control" name="certificado_laboral_funciones"
+                                                    id="certificado_laboral_funciones">
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div id="job_formacion_add">
+                                                    <a id="add_job_formacion" class="btn btn-primary btn-lg">Añadir
+                                                    </a>
+                                                </div>
+                                                <div id="job_formacion_add_again" style="display:none;">
+                                                    <a id="add_another_job_formacion" class="btn btn-primary btn-lg">Agregar Otro
+                                                    </a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
                                     <!--FIN Especificaciones cargo -->
                                     <div class="dropdown-divider"></div>
+                                    <!--  -->
                                     
                                 </div>
                                 
                                 
-                                <textarea class="form-control o_website_form_input" style="display:none;"
-                                          id="formacion_esp" name="formacion_esp"></textarea>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <!-- CONSIDER-->
-                                <input type="hidden" class="form-control"
-                                                   id="no_of_formacion_especifica" value="0"
-                                                   name="no_of_formacion_especifica"/>
-                                <input type="hidden" class="form-control"
-                                                   id="formacion_especifica_to_remove"
-                                                   name="formacion_especifica_to_remove"/>
+                                
 
-                                <table id="formacion_append" class="table-striped table"
-                                       style="margin-left: 38px;width:93%">
-                                    <thead style="font-size: 15px;">
-                                        <tr>
-                                            <b>
-                                                <th>Formación Especifica</th>
-                                                <th>Certificado Académico</th>
-                                                <th>Prueba Técnica</th>
-                                                <th>Certificado Laboral Funciones</th>
-                                                <th></th>
-                                            </b>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="formacion_body">
-                                    </tbody>
-                                </table>
-
-                                <table id="formacion_table"
+                                <!-- <table id="formacion_table"
                                        style="border-spacing: 10px; border-collapse: separate; margin-left: 44px;">
                                     <tr>
                                         <td>
@@ -481,9 +555,9 @@
                                             </select>
                                         </td>
                                     </tr>
-                                </table>
+                                </table> -->
 
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 44px;">
+                                <!-- <table style="border-spacing: 10px; border-collapse: separate; margin-left: 44px;">
                                     <tr>
                                         <td id="job_formacion_add">
                                             <a id="add_job_formacion" class="btn btn-primary btn-lg">Añadir
@@ -495,7 +569,7 @@
                                             </a>
                                         </td>
                                     </tr>
-                                </table>
+                                </table> -->
                                 <div class="text-center">
                                   <b>Experiencia</b>
                                 </div>
