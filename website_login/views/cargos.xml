@@ -400,8 +400,7 @@
                                                    id="formacion_especifica_to_remove"
                                                    name="formacion_especifica_to_remove"/>
 
-                                            <table id="formacion_append" class="table-striped table"
-                                                style="margin-left: 38px;width:93%">
+                                            <table id="formacion_append" class="table-striped table">
                                                 <thead style="font-size: 15px;">
                                                     <tr>
                                                         <b>
