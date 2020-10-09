@@ -182,10 +182,10 @@
                                     <!-- FIN IDENTIFICACION DEL CARGO -->
                                     <div class="dropdown-divider"></div>
                                     <!-- PERSONAL A CARGO -->
-                                    <h3 class="text-center">
+                                    <h4 class="text-center">
                                         <u>Personal que depende Directa e Indirectamente del Cargo</u>
                                             
-                                    </h3>
+                                    </h4>
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
@@ -305,10 +305,10 @@
                                         </p>
                                     </div>
                                     <div class="text-center">
-                                        <h3>
+                                        <h4>
                                             <label class="col-form-label">Competencias Requeridas para el Cargo
                                             </label>
-                                        </h3>
+                                        </h4>
                                     </div>
                                     <h5><u>Educación</u></h5>
                                     <div class="row">
@@ -487,134 +487,51 @@
                                     </div>
                                     <!--FIN Especificaciones cargo -->
                                     <div class="dropdown-divider"></div>
-                                    <!--  -->
-                                    
-                                </div>
-                                
-                                
-                                
-
-                                <!-- <table id="formacion_table"
-                                       style="border-spacing: 10px; border-collapse: separate; margin-left: 44px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="formacion_especifica">Formación
-                                                    <br/>
-                                                    Especifica
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control o_website_form_input"
-                                                   id="formacion_especifica"
-                                                   name="formacion_especifica"/>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="certificado_academico">Certificado
-                                                    <br/>Académico
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="certificado_academico"
-                                                    id="certificado_academico">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="prueba_tecnica">Prueba Técnica
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="prueba_tecnica" id="prueba_tecnica">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="certificado_laboral_funciones">
-                                                    Certificado Laboral<br/>Funciones
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="certificado_laboral_funciones"
-                                                    id="certificado_laboral_funciones">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table> -->
-
-                                <!-- <table style="border-spacing: 10px; border-collapse: separate; margin-left: 44px;">
-                                    <tr>
-                                        <td id="job_formacion_add">
-                                            <a id="add_job_formacion" class="btn btn-primary btn-lg">Añadir
-                                            </a>
-                                        </td>
-                                        <td id="job_formacion_add_again" style="display:none;">
-                                            <a id="add_another_job_formacion" class="btn btn-primary btn-lg">Agregar
-                                                Otro
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table> -->
-                                <div class="text-center">
-                                  <b>Experiencia</b>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
+                                    <!-- Experiencia  -->
+                                    <h4 class="text-center">Experiencia</h4>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
                                                 <label class="col-form-label" for="general">General
                                                 </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="general"
+                                                <select class="form-control" name="general"
                                                     id="general">
-                                                <option></option>
-                                                <option value="SIN EXPERIENCIA">SIN EXPERIENCIA</option>
-                                                <option value="6 MESES">6 MESES</option>
-                                                <option value="1 AÑO">1 AÑO</option>
-                                                <option value="2 AÑOS">2 AÑOS</option>
-                                                <option value="3 AÑOS">3 AÑOS</option>
-                                                <option value="4 AÑOS">4 AÑOS</option>
-                                                <option value="5 AÑOS">5 AÑOS</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="especifica_cargos_similares">
-                                                    Específica y/o en<br/>cargos similares
-                                                </label>
+                                                    <option>...</option>
+                                                    <option value="SIN EXPERIENCIA">SIN EXPERIENCIA</option>
+                                                    <option value="6 MESES">6 MESES</option>
+                                                    <option value="1 AÑO">1 AÑO</option>
+                                                    <option value="2 AÑOS">2 AÑOS</option>
+                                                    <option value="3 AÑOS">3 AÑOS</option>
+                                                    <option value="4 AÑOS">4 AÑOS</option>
+                                                    <option value="5 AÑOS">5 AÑOS</option>
+                                                </select>
                                             </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="especifica_cargos_similares"
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="especifica_cargos_similares">
+                                                    Específica y/o en cargos similares
+                                                </label>
+                                                <select class="form-control" name="especifica_cargos_similares"
                                                     id="especifica_cargos_similares">
-                                                <option></option>
-                                                <option value="">SIN EXPERIENCIA</option>
-                                                <option value="6 MESES">6 MESES</option>
-                                                <option value="1 AÑO">1 AÑO</option>
-                                                <option value="2 AÑOS">2 AÑOS</option>
-                                                <option value="3 AÑOS">3 AÑOS</option>
-                                                <option value="4 AÑOS">4 AÑOS</option>
-                                                <option value="5 AÑOS">5 AÑOS</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </table>
+                                                    <option></option>
+                                                    <option value="">SIN EXPERIENCIA</option>
+                                                    <option value="6 MESES">6 MESES</option>
+                                                    <option value="1 AÑO">1 AÑO</option>
+                                                    <option value="2 AÑOS">2 AÑOS</option>
+                                                    <option value="3 AÑOS">3 AÑOS</option>
+                                                    <option value="4 AÑOS">4 AÑOS</option>
+                                                    <option value="5 AÑOS">5 AÑOS</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIN  EXPERIENCIA -->
+                                    <div class="dropdown-divider"></div>
+                                    
+                                </div>
+                            
+                                
 
                                 <div class="text-center">
                                     <h4>
