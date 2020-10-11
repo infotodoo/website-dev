@@ -431,62 +431,123 @@
                                     </div>
                                 </div>
                                 <!-- FIN GROUP 5 -->
+                                <div class="dropdown-divider"></div>
+                                <!-- GROUP 6 -->
+                                <div group="group_6">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="fotocopia_cedula">Fotocopia Cédula de
+                                                    Ciudadanía *
+                                                </label>
+                                                <input type="file" class="form-control o_website_form_input"
+                                               name="fotocopia_cedula"
+                                               required="required"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="cer_estudio">Certificados de Estudio</label>
+                                                </div>
+                                                <input type="file" class="form-control o_website_form_input" name="cer_estudio"
+                                               required="required"/>
+                                                
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="hv">Hoja de Vida</label>
+                                                    <input type="file" class="form-control o_website_form_input" name="hv"
+                                               required="required"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="certi_laborales">Certificaciones Laborales
+                                                    </label>
+                                                </div>
+                                                <input type="file" class="form-control o_website_form_input"
+                                               name="certi_laborales"
+                                               required="required"/>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="tratamiento_datos">He leído y acepto *
+                                                </label>
+                                                <input type="checkbox" class="oe_import_advanced_mode"
+                                                   name="tratamiento_datos"
+                                                   required="required"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <t t-if="tratamiento_datos">
+                                                    <a t-att-href="'/attachment/download?attachment_id=%i' % tratamiento_datos.id">
+                                                        <span class="fa fa-download">Tratamiento datos</span>
+                                                    </a>
+                                                </t>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                            <span id="o_website_form_result"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- user -->
+                                    <div class="form-group row form-field o_website_form_required_custom"
+                                     style="display: none">
+                                        <div class="col-lg-3 col-md-4 text-right">
+                                            <label class="col-form-label" for="created_user">User</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <input type="text" name="created_user" class="form-control o_website_form_input"
+                                                id="created_user"
+                                                t-att-value="request.env.uid" required=""/>
+                                        </div>
+                                    </div>
+                                    <!-- JOB -->
+                                    <div class="form-group row form-field d-none">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="col-form-label" for="job_id">Job</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <input type="hidden" class="form-control o_website_form_input" name="job_id"/>
+                                        </div>
+                                    </div>
+                                    <!-- DEPARMENT -->
+                                    <div class="form-group row form-field d-none">
+                                        <div class="col-lg-3 col-md-4">
+                                            <label class="col-form-label" for="department_id">Department</label>
+                                        </div>
+                                        <div class="col-lg-7 col-md-8">
+                                            <input type="hidden" class="form-control o_website_form_input"
+                                                name="department_id"/>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
 
                             </div> 
                             
 
-                            
+                            <!-- <div group="group_6"
+                                 style="background-color:#d1f9dd;margin-top:15px;padding-top:15px;"> -->
 
-                            
-
-                            <div group="group_6"
-                                 style="background-color:#d1f9dd;margin-top:15px;padding-top:15px;">
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="fotocopia_cedula">Fotocopia Cédula de
-                                            Ciudadanía
-                                        </label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="file" class="form-control o_website_form_input"
-                                               name="fotocopia_cedula"
-                                               required="required"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="cer_estudio">Certificados de Estudio</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="file" class="form-control o_website_form_input" name="cer_estudio"
-                                               required="required"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="hv">Hoja de Vida</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="file" class="form-control o_website_form_input" name="hv"
-                                               required="required"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="certi_laborales">Certificaciones Laborales
-                                        </label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="file" class="form-control o_website_form_input"
-                                               name="certi_laborales"
-                                               required="required"/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row form-field o_website_form_required_custom"
+                                <!-- <div class="form-group row form-field o_website_form_required_custom"
                                      style="display: none">
                                     <div class="col-lg-3 col-md-4 text-right">
                                         <label class="col-form-label" for="created_user">User</label>
@@ -496,17 +557,17 @@
                                                id="created_user"
                                                t-att-value="request.env.uid" required=""/>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="form-group row form-field d-none">
+                                <!-- <div class="form-group row form-field d-none">
                                     <div class="col-lg-3 col-md-4">
                                         <label class="col-form-label" for="job_id">Job</label>
                                     </div>
                                     <div class="col-lg-7 col-md-8">
                                         <input type="hidden" class="form-control o_website_form_input" name="job_id"/>
                                     </div>
-                                </div>
-                                <div class="form-group row form-field d-none">
+                                </div> -->
+                                <!-- <div class="form-group row form-field d-none">
                                     <div class="col-lg-3 col-md-4">
                                         <label class="col-form-label" for="department_id">Department</label>
                                     </div>
@@ -514,8 +575,8 @@
                                         <input type="hidden" class="form-control o_website_form_input"
                                                name="department_id"/>
                                     </div>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
+                                </div> -->
+                                <!-- <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
                                     <td>
                                         <div class="text-right">
                                             <label class="col-form-label" for="tratamiento_datos">He leído y acepto *
@@ -538,14 +599,14 @@
                                             </t>
                                         </div>
                                     </td>
-                                </table>
-                                <div class="form-group row">
+                                </table> -->
+                                <!-- <div class="form-group row">
                                     <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
                                         <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
                                         <span id="o_website_form_result"></span>
                                     </div>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
                         </form>
                     </section>
                 </div>
