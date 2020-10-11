@@ -97,8 +97,7 @@
                                 </table>
                             </div>
 
-                            <div id="group_2"
-                                 style="background-color:  #d1f9dd;padding-top:13px;padding-bottom:1px; display:none;">
+                            <div id="group_2">
                                 <div class="container">
                                     <!-- IDENTIFICACION DEL CARGO -->
                                     <h2 class="text-center">Identificación del Cargo </h2>
@@ -666,14 +665,89 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <h6 class="text-left"><u>Activos a Cargo</u></h6>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <table id="activos_append" class="table-striped table">
+                                                <thead style="font-size: 15px;">
+                                                    <tr>
+                                                        <b>
+                                                            <th>Catergoria</th>
+                                                            <th>Activo del Cargo</th>
+                                                            <th style="width:0px;"></th>
+                                                        </b>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="activos_body">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="activos_table">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="categoria">Catergoria
+                                                </label>
+                                                <select class="form-control" name="categoria" id="categoria">
+                                                    <option></option>
+                                                    <option value="FISICO">FISICO</option>
+                                                    <option value="INFORMACIÓN">INFORMACIÓN</option>
+                                                    <option value="TECNOLÓGICO">TECNOLÓGICO</option>
+                                                    <option value="NO APLICA">NO APLICA</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="activo_cargo">Activo del Cargo
+                                                </label>
+                                                <textarea class="form-control o_website_form_input"
+                                                      id="activo_cargo" name="activo_cargo"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div id="activo_add">
+                                                    <a id="add_activo" class="btn btn-primary btn-lg">Añadir
+                                                    </a>
+                                                <div>
+                                                <div id="activo_add_again" style="display:none;">
+                                                    <a id="add_another_activo" class="btn btn-primary btn-lg">Agregar
+                                                        Otro
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- FIN DE DESCRIPCION DEL CARGO -->
+                                    <div class="dropdown-divider"></div>
+                                    <!-- OBSERVACIONES -->
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="description">Observaciones
+                                                </label>
+                                                <textarea class="form-control o_website_form_input"
+                                                      id="description" name="description"></textarea>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                    <input type="text" style="display:none;" class="form-control o_website_form_input"
+                                       id="edit_cargo_id" name="edit_cargo_id"/>
+                                    <div class="form-group row">
+                                        <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                                            <button id="submit_cargo" type="submit" class="btn btn-primary btn-lg">
+                                                Enviar
+                                            </button>
+                                            <span id="o_website_form_result"></span>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Activos a Cargo</u>
-                                    </label>
-                                </div>
                                 <textarea class="form-control o_website_form_input" style="display:none;"
                                           id="activos_line" name="activos_line"></textarea>
 
@@ -684,91 +758,9 @@
                                                    id="activos_cargo_to_remove"
                                                    name="activos_cargo_to_remove"/>
 
-                                <table id="activos_append" class="table-striped table"
-                                       style="margin-left: 79px;width:85%;">
-                                    <thead style="font-size: 15px;">
-                                        <tr>
-                                            <b>
-                                                <th>Catergoria</th>
-                                                <th>Activo del Cargo</th>
-                                                <th style="width:0px;"></th>
-                                            </b>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="activos_body">
-                                    </tbody>
-                                </table>
-                                <table id="activos_table"
-                                       style="border-spacing: 10px; border-collapse: separate; margin-left: 208px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="categoria">Catergoria
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="categoria" id="categoria">
-                                                <option></option>
-                                                <option value="FISICO">FISICO</option>
-                                                <option value="INFORMACIÓN">INFORMACIÓN</option>
-                                                <option value="TECNOLÓGICO">TECNOLÓGICO</option>
-                                                <option value="NO APLICA">NO APLICA</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="activo_cargo">Activo del Cargo
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input"
-                                                      id="activo_cargo" name="activo_cargo"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 284px;">
-                                    <tr>
-                                        <td id="activo_add">
-                                            <a id="add_activo" class="btn btn-primary btn-lg">Añadir
-                                            </a>
-                                        </td>
-                                        <td id="activo_add_again" style="display:none;">
-                                            <a id="add_another_activo" class="btn btn-primary btn-lg">Agregar
-                                                Otro
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 159px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="description">Observaciones
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input"
-                                                      style="width: 700px;height: 125px;margin-left: 20px;"
-                                                      id="description" name="description"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <br/>
-                                <br/>
-                                <input type="text" style="display:none;" class="form-control o_website_form_input"
-                                       id="edit_cargo_id" name="edit_cargo_id"/>
-                                <div class="form-group row">
-                                    <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
-                                        <button id="submit_cargo" type="submit" class="btn btn-primary btn-lg">
-                                            Enviar
-                                        </button>
-                                        <span id="o_website_form_result"></span>
-                                    </div>
-                                </div>
+
+                                
+                                
                             </div>
                         </form>
                     </section>
