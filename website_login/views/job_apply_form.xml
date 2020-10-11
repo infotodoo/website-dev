@@ -339,65 +339,28 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4">
-                                            <div class="form-group"></div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group"></div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div> 
-                            
-
-                            <div group="group_4" style="background-color: #d1f9dd;margin-top:15px;">
-                                <div>
-                                    <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
-                                        
-                                    
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="genero">Género *</label>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <select class="form-control" name="genero" required="">
-                                                    <option></option>
-                                                    <option value="Masculino">MASCULINO</option>
-                                                    <option value="Femenino">FEMENINO</option>
-                                                </select>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="declara_renta">¿Declara usted
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="declara_renta">¿Declara usted
                                                         Renta? *
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                                </label>
                                                 <select class="form-control" name="declara_renta" required="">
                                                     <option></option>
                                                     <option value="SI">SI</option>
                                                     <option value="NO">NO</option>
                                                 </select>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
 
-                            <div group="group_5" style="background-color: #d1f9dd; margin-top:15px;">
-                                <div class="form-field o_website_form_required_custom">
-                                    <table style="border-spacing: 10px; border-collapse: separate; margin-left: 145px;">
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="tallap">Talla Pantalón</label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                </div>
+                                <!-- FIN GROUP 4 -->
+                                <div class="dropdown-divider"></div>
+                                <div group="group_5">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="tallap">Talla Pantalón</label>
                                                 <select class="form-control" name="tallap" required="">
                                                     <option></option>
                                                     <option value="XS">XS</option>
@@ -407,13 +370,13 @@
                                                     <option value="XL">XL</option>
                                                     <option value="XXL">XXL</option>
                                                 </select>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="tallac">Talla Camisa</label>
-                                                </div>
-                                            </td>
-                                            <td>
+
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="tallac">Talla Camisa</label>
                                                 <select class="form-control" name="tallac" required="">
                                                     <option></option>
                                                     <option value="XS">XS</option>
@@ -423,15 +386,12 @@
                                                     <option value="XL">XL</option>
                                                     <option value="XXL">XXL</option>
                                                 </select>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="tallas">Talla Saco</label>
-                                                </div>
-                                            </td>
-                                            <td>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="tallas">Talla Saco</label>
                                                 <select class="form-control" name="tallas" required="">
                                                     <option></option>
                                                     <option value="XS">XS</option>
@@ -441,13 +401,12 @@
                                                     <option value="XL">XL</option>
                                                     <option value="XXL">XXL</option>
                                                 </select>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="tallaz">Talla Zapatos</label>
-                                                </div>
-                                            </td>
-                                            <td>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="tallaz">Talla Zapatos</label>
                                                 <select class="form-control" name="tallaz" required="">
                                                     <option></option>
                                                     <option value="30">30</option>
@@ -466,11 +425,19 @@
                                                     <option value="43">43</option>
                                                     <option value="44">44</option>
                                                 </select>
-                                            </td>
-                                        </tr>
-                                    </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <!-- FIN GROUP 5 -->
+
+                            </div> 
+                            
+
+                            
+
+                            
 
                             <div group="group_6"
                                  style="background-color:#d1f9dd;margin-top:15px;padding-top:15px;">
