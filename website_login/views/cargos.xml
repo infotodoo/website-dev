@@ -624,73 +624,50 @@
 
                                             </div>
                                         </div>
-                                    </div>
-                                    
-                                </div>
-                       
-                                
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Funciones</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 214px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="deberes">Deberes
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="deberes">Deberes
+                                                    </label>
+                                                </div>
+                                                <textarea class="form-control o_website_form_input" required=""
                                                       id="deberes" name="deberes"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Responsabilidades</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 147px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="responsabilidades">Responsabilidades
-                                                </label>
+                                                
+
                                             </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
+                                        </div>
+                                    </div>
+                                    <h6><u>Responsabilidades</u></h6>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="responsabilidades">Responsabilidades
+                                                    </label>
+                                                </div>
+                                                 <textarea class="form-control o_website_form_input" required=""
                                                       id="responsabilidades" name="responsabilidades"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Nivel de Autoridad</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 149px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="nivel_autoridad">Nivel de Autoridad
-                                                </label>
+
                                             </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
+                                        </div>
+                                    </div>
+                                    <h6 class="text-left">
+                                        <u>Nivel de Autoridad</u>
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="nivel_autoridad">Nivel de Autoridad
+                                                    </label>
+                                                </div>
+                                                <textarea class="form-control o_website_form_input" required=""
                                                       id="nivel_autoridad" name="nivel_autoridad"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div style="background-color:azure; height:10px;"></div>
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
