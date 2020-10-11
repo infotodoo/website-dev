@@ -710,7 +710,7 @@
                                                 <div id="activo_add">
                                                     <a id="add_activo" class="btn btn-primary btn-lg">Añadir
                                                     </a>
-                                                <div>
+                                                </div>
                                                 <div id="activo_add_again" style="display:none;">
                                                     <a id="add_another_activo" class="btn btn-primary btn-lg">Agregar
                                                         Otro
