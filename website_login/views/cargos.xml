@@ -534,7 +534,7 @@
                                     </h4>
                                     <h6><u>Objetivo del Cargo</u></h6>
                                     <div class="row">
-                                        <div class="col-md-2"></div>
+                                        <!-- <div class="col-md-2"></div> -->
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label class="col-form-label" for="objetivo_cargo">Objetivo del Cargo
@@ -544,94 +544,91 @@
                                                       id="objetivo_cargo" name="objetivo_cargo"></textarea>
                                             </div>
                                         </div>
-                                        <div class="col-md-2"></div>
+                                        <!-- <div class="col-md-2"></div> -->
                                         
+                                    </div>
+                                    <h6 class="text-left">
+                                        <u>Escala Salarial</u>
+                                    </h6>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="aplica">¿Aplica?
+                                                </label>
+                                                <select class="form-control" name="aplica" id="aplica">
+                                                    <option></option>
+                                                    <option value="SI">SI</option>
+                                                    <option value="NO">NO</option>
+                                                </select>
+                                                
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div id="aplica_table_a" style="display:none;">
+                                            
+                                                    <label class="col-form-label" for="minimo">Mínino
+                                                    </label>
+
+                                            
+                                                </div>
+                                                <div id="aplica_table_b" style="display:none;">
+                                                    <input type="text" class="form-control o_website_form_input"
+                                                        id="minimo"
+                                                        name="minimo"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div id="aplica_table_c" style="display:none;">
+                                            
+                                                    <label class="col-form-label" for="maximo">Máximo
+                                                    </label>
+                                            
+                                                </div>
+                                                <div id="aplica_table_d" style="display:none;">
+                                                    <input type="text" class="form-control o_website_form_input"
+                                                        id="maximo"
+                                                        name="maximo"/>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-left"><u>Funciones</u></h6>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="que_hace">¿Qué hace?
+                                                    </label>
+                                                </div>
+                                                <textarea class="form-control o_website_form_input" required=""
+                                                      
+                                                      id="que_hace" name="que_hace"></textarea>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="como_lo_hace">¿Cómo lo hace?
+                                                    </label>
+                                                </div>
+                                                <textarea class="form-control o_website_form_input" required=""
+                                                      id="como_lo_hace" name="como_lo_hace"></textarea>
+
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                 </div>
-                            
-                        
-
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Escala Salarial</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 215px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="aplica">¿Aplica?
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <select class="form-control" name="aplica" id="aplica">
-                                                <option></option>
-                                                <option value="SI">SI</option>
-                                                <option value="NO">NO</option>
-                                            </select>
-                                        </td>
-                                        <td id="aplica_table_a" style="display:none;">
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="minimo">Mínino
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td id="aplica_table_b" style="display:none;">
-                                            <input type="text" class="form-control o_website_form_input"
-                                                   id="minimo"
-                                                   name="minimo"/>
-                                        </td>
-                                        <td id="aplica_table_c" style="display:none;">
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="maximo">Máximo
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td id="aplica_table_d" style="display:none;">
-                                            <input type="text" class="form-control o_website_form_input"
-                                                   id="maximo"
-                                                   name="maximo"/>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Funciones</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 167px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="que_hace">¿Qué hace?
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
-                                                      id="que_hace" name="que_hace"></textarea>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="text-right o_website_form_required_custom">
-                                                <label class="col-form-label" for="como_lo_hace">¿Cómo lo hace?
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="width: 600px;"
-                                                      id="como_lo_hace" name="como_lo_hace"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
-                                <div style="background-color:azure; height:10px;"></div>
+                       
+                                
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
                                         <u>Funciones</u>
