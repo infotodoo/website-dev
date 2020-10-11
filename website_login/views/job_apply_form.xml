@@ -19,7 +19,7 @@
                         <form id="hr_recruitment_form" action="/job_apply" method="post" class="s_website_form"
                               enctype="multipart/form-data" data-model_name="hr.applicant">
                             <div class="container">
-                                <div id="group_1" class="row">
+                                <div id="group_1">
                     
                                     <!-- MODELO REQUISICION -->
                                     <div class="row">
@@ -243,88 +243,73 @@
                                 </div>
                                 <!-- FIN GROUP 3  -->
                                 <div class="dropdown-divider"></div>
-
-                            </div> 
-                            
-
-                            <div group="group_4" style="background-color: #d1f9dd;margin-top:15px;">
-                                <div>
-                                    <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <i class="fa fa-phone"></i>
-                                                    <label class="col-form-label" for="partner_mobile">Celular *</label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                <!-- GROUP 4 -->
+                                <div group="group_4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="partner_mobile">
+                                                    <i class="fa fa-phone"></i> Celular *
+                                                </label>
                                                 <input type="text" class="form-control o_website_form_input"
                                                        id="partner_mobile" maxlength="10"
                                                        name="partner_mobile"
                                                        required="required"/>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <i class="fa fa-phone"></i>
-                                                    <label class="col-form-label" for="partner_phone">Teléfono Fijo
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <i class="fa fa-phone"></i>
+                                                <label class="col-form-label" for="partner_phone">Teléfono Fijo
+                                                </label>
                                                 <input type="text" class="form-control o_website_form_input"
                                                        maxlength="10"
                                                        name="partner_phone"/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="email_from">Correo Electrónico *
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="email_from">Correo Electrónico *
+                                                </label>
                                                 <input type="text" class="form-control o_website_form_input"
                                                        id="email_from"
                                                        name="email_from"
                                                        required="required"/>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="emal_cc">Confirmación
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="emal_cc">Confirmación
                                                         Correo
                                                         Electrónico *
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                                </label>
                                                 <input type="text" class="form-control o_website_form_input"
                                                        name="emal_cc" id="emal_cc"
                                                        required=""/>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="idioma">Idioma Nativo *</label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="idioma">Idioma Nativo *</label>
                                                 <select class="form-control" name="idioma" required="">
-                                                    <option></option>
+                                                    <option>...</option>
                                                     <option t-foreach="lang_records" t-as="lang_record"
                                                             t-att-value="lang_record.id">
                                                         <t t-esc="lang_record.name"/>
                                                     </option>
                                                 </select>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <label class="col-form-label" for="grupo_san">Grupo Sanguíneo *
-                                                    </label>
-                                                </div>
-                                            </td>
-                                            <td>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="grupo_san">Grupo Sanguíneo *
+                                                </label>
                                                 <select class="form-control" name="grupo_san" required="">
                                                     <option></option>
                                                     <option value="A+">A+</option>
@@ -336,8 +321,41 @@
                                                     <option value="O+">O+</option>
                                                     <option value="O-">O-</option>
                                                 </select>
-                                            </td>
-                                        </tr>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="genero">Género *</label>
+                                                <select class="form-control" name="genero" required="">
+                                                    <option></option>
+                                                    <option value="Masculino">MASCULINO</option>
+                                                    <option value="Femenino">FEMENINO</option>
+                                                </select>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div> 
+                            
+
+                            <div group="group_4" style="background-color: #d1f9dd;margin-top:15px;">
+                                <div>
+                                    <table style="border-spacing: 10px; border-collapse: separate; margin-left: 117px;">
+                                        
+                                    
                                         <tr>
                                             <td>
                                                 <div class="text-right">
