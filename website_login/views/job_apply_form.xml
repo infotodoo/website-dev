@@ -480,6 +480,9 @@
 
                                             </div>
                                         </div>
+                                        
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="col-form-label" for="tratamiento_datos">He leído y acepto *
@@ -489,6 +492,8 @@
                                                    required="required"/>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="row">
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <t t-if="tratamiento_datos">
@@ -496,7 +501,6 @@
                                                         <span class="fa fa-download">Tratamiento datos</span>
                                                     </a>
                                                 </t>
-
                                             </div>
                                         </div>
                                     </div>
