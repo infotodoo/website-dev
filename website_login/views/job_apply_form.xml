@@ -23,8 +23,8 @@
                     
                                     <!-- MODELO REQUISICION -->
                                     <div class="row">
-                                        <div class="col-md-4"></div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
                                             <div class="form-group">
                                                 <div class="o_website_form_required_custom">
                                                     <label class="col-form-label" for="requisicion">Modelo Requisición</label>
@@ -40,7 +40,7 @@
                                             
 
                                         </div>
-                                        <div class="col-md-4"></div>
+                                        <div class="col-md-2"></div>
                                     </div>
                                     <!-- FIN REQUISICION -->
                                 </div>
@@ -70,11 +70,12 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="col-form-label" for="name4">Segundo Nombre</label>
-
-                                            </div>
-                                            <input style="text-transform: uppercase;" type="text"
+                                                <input style="text-transform: uppercase;" type="text"
                                                        class="form-control o_website_form_input"
                                                        name="name4"/>
+
+                                            </div>
+                                            
                                         </div>
                                     
                                     </div>
@@ -160,82 +161,91 @@
                                 </div>
                                 <!-- FIN GROUP2 -->
                                 <div class="dropdown-divider"></div>
-                                
-
-                            </div> 
-                            <div id="group_3"
-                                 style="background-color: #d1f9dd;padding-top:10px;padding-bottom:1px;margin-top:15px;">
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="pais">País de Nacimiento</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <select class="form-control" name="pais" required="">
-                                            <option></option>
-                                            <option t-foreach="countries" t-as="country" t-att-value="country.id">
-                                                <t t-esc="country.name"/>
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="namef">Fecha de Nacimiento</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="date" class="form-control o_website_form_input" name="namef"
+                                <!-- GROUP 3 -->
+                                <div id="group_3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="pais">País de Nacimiento</label>
+                                                </div>
+                                                <select class="form-control" name="pais" required="">
+                                                    <option></option>
+                                                    <option t-foreach="countries" t-as="country" t-att-value="country.id">
+                                                        <t t-esc="country.name"/>
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="namef">Fecha de Nacimiento</label>
+                                                </div>
+                                                <input type="date" class="form-control o_website_form_input" name="namef"
                                                id="namef"
                                                required=""/>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="conf">Confirmación Fecha de Nacimiento
+                                                    </label>
+                                                </div>
+                                                <input type="date" class="form-control o_website_form_input"
+                                                    name="conf" id="conf"
+                                                    required=""/>
+
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="conf">Confirmación Fecha de Nacimiento
-                                        </label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="date" class="form-control o_website_form_input"
-                                               name="conf" id="conf"
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="dep">Departamento de Residencia
+                                                    </label>
+                                                    <select class="form-control" name="dep" required="">
+                                                        <option></option>
+                                                        <option t-foreach="states" t-as="state" t-att-value="state.id">
+                                                            <t t-esc="state.name"/>
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="city">Ciudad de Residencia</label>
+                                                </div>
+                                                <select class="form-control" name="city" required="">
+                                                    <option></option>
+                                                    <option t-foreach="cities" t-as="city" t-att-value="city.id">
+                                                        <t t-esc="city.name"/>
+                                                    </option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <div class="o_website_form_required_custom">
+                                                    <label class="col-form-label" for="barrio">Barrio de Residencia</label>
+                                                </div>
+                                                <input type="text" class="form-control o_website_form_input" name="barrio"
                                                required=""/>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="dep">Departamento de Residencia
-                                        </label>
-                                    </div>
-                                    <div class="col-4">
-                                        <select class="form-control" name="dep" required="">
-                                            <option></option>
-                                            <option t-foreach="states" t-as="state" t-att-value="state.id">
-                                                <t t-esc="state.name"/>
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="city">Ciudad de Residencia</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <select class="form-control" name="city" required="">
-                                            <option></option>
-                                            <option t-foreach="cities" t-as="city" t-att-value="city.id">
-                                                <t t-esc="city.name"/>
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row form-field o_website_form_required_custom">
-                                    <div class="col-lg-3 col-md-4 text-right">
-                                        <label class="col-form-label" for="barrio">Barrio de Residencia</label>
-                                    </div>
-                                    <div class="col-4">
-                                        <input type="text" class="form-control o_website_form_input" name="barrio"
-                                               required=""/>
-                                    </div>
-                                </div>
-                            </div>
+                                <!-- FIN GROUP 3  -->
+                                <div class="dropdown-divider"></div>
+
+                            </div> 
+                            
 
                             <div group="group_4" style="background-color: #d1f9dd;margin-top:15px;">
                                 <div>
