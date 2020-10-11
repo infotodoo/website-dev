@@ -18,7 +18,7 @@ from odoo.addons.auth_signup.controllers.main import AuthSignupHome
 from odoo.addons.website_form.controllers.main import WebsiteForm
 from odoo.addons.website_hr_recruitment.controllers.main import WebsiteHrRecruitment
 
-
+_logger = logging.getLogger(__name__)
 class ApplyJob(WebsiteHrRecruitment):
 
     @http.route('''/jobs/apply/<model("hr.job", "[('website_id', 'in', (False, current_website_id))]"):job>''',
