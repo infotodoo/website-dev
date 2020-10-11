@@ -534,15 +534,17 @@
                                     </h4>
                                     <h6><u>Objetivo del Cargo</u></h6>
                                     <div class="row">
+                                        <div class="col-md-2"></div>
                                         <div class="col-md-8">
                                             <div class="form-group">
                                                 <label class="col-form-label" for="objetivo_cargo">Objetivo del Cargo
                                                 </label>
                                                 <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
+                                                      
                                                       id="objetivo_cargo" name="objetivo_cargo"></textarea>
                                             </div>
                                         </div>
+                                        <div class="col-md-2"></div>
                                         
                                     </div>
                                     
