@@ -390,7 +390,7 @@
                                         <div class="col-md-12">
                                             <textarea class="form-control o_website_form_input" style="display:none;"
                                                 id="formacion_esp" name="formacion_esp"></textarea>
-                                            <div style="background-color:azure; height:10px;"></div>
+                                            
                                             <!-- CONSIDER-->
                                             <input type="hidden" class="form-control"
                                                     id="no_of_formacion_especifica" value="0"
