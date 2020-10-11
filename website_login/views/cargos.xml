@@ -528,38 +528,28 @@
                                     </div>
                                     <!--FIN  EXPERIENCIA -->
                                     <div class="dropdown-divider"></div>
+                                    <!-- DESCRIPCION DEL CARGO -->
+                                    <h4 class="text-center">
+                                        Descripción del Cargo
+                                    </h4>
+                                    <h6><u>Objetivo del Cargo</u></h6>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                                <label class="col-form-label" for="objetivo_cargo">Objetivo del Cargo
+                                                </label>
+                                                <textarea class="form-control o_website_form_input" required=""
+                                                      style="margin-top: -19px;width: 600px;"
+                                                      id="objetivo_cargo" name="objetivo_cargo"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                     
                                 </div>
                             
-                                
+                        
 
-                                <div class="text-center">
-                                    <h4>
-                                        <label class="col-form-label">Descripción del Cargo
-                                        </label>
-                                    </h4>
-                                </div>
-                                <div style="background-color:azure; height:10px;"></div>
-                                <div class="text-left">
-                                    <label style="margin-left: 50px;" class="col-form-label">
-                                        <u>Objetivo del Cargo</u>
-                                    </label>
-                                </div>
-                                <table style="border-spacing: 10px; border-collapse: separate; margin-left: 155px;">
-                                    <tr>
-                                        <td>
-                                            <div class="text-right">
-                                                <label class="col-form-label" for="objetivo_cargo">Objetivo del Cargo
-                                                </label>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control o_website_form_input" required=""
-                                                      style="margin-top: -19px;width: 600px;"
-                                                      id="objetivo_cargo" name="objetivo_cargo"></textarea>
-                                        </td>
-                                    </tr>
-                                </table>
                                 <div style="background-color:azure; height:10px;"></div>
                                 <div class="text-left">
                                     <label style="margin-left: 50px;" class="col-form-label">
